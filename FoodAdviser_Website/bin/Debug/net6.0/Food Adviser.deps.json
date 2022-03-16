@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Food Adviser/1.0.0": {
+        "dependencies": {
+          "FoodAdviserModels": "1.0.0"
+        },
+        "runtime": {
+          "Food Adviser.dll": {}
+        }
+      },
+      "FoodAdviserModels/1.0.0": {
+        "runtime": {
+          "FoodAdviserModels.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Food Adviser/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FoodAdviserModels/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

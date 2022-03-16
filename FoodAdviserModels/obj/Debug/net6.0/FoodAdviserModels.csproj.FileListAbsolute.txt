@@ -1,0 +1,24 @@
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserModels\bin\Debug\net6.0\FoodAdviserModels.deps.json
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserModels\bin\Debug\net6.0\FoodAdviserModels.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserModels\bin\Debug\net6.0\ref\FoodAdviserModels.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserModels\bin\Debug\net6.0\FoodAdviserModels.pdb
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserModels\obj\Debug\net6.0\FoodAdviserModels.csproj.AssemblyReference.cache
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserModels\obj\Debug\net6.0\FoodAdviserModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserModels\obj\Debug\net6.0\FoodAdviserModels.AssemblyInfoInputs.cache
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserModels\obj\Debug\net6.0\FoodAdviserModels.AssemblyInfo.cs
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserModels\obj\Debug\net6.0\FoodAdviserModels.csproj.CoreCompileInputs.cache
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserModels\obj\Debug\net6.0\FoodAdviserModels.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserModels\obj\Debug\net6.0\ref\FoodAdviserModels.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserModels\obj\Debug\net6.0\FoodAdviserModels.pdb
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserModels\bin\Debug\net6.0\FoodAdviserModels.deps.json
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserModels\bin\Debug\net6.0\FoodAdviserModels.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserModels\bin\Debug\net6.0\ref\FoodAdviserModels.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserModels\bin\Debug\net6.0\FoodAdviserModels.pdb
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserModels\obj\Debug\net6.0\FoodAdviserModels.csproj.AssemblyReference.cache
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserModels\obj\Debug\net6.0\FoodAdviserModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserModels\obj\Debug\net6.0\FoodAdviserModels.AssemblyInfoInputs.cache
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserModels\obj\Debug\net6.0\FoodAdviserModels.AssemblyInfo.cs
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserModels\obj\Debug\net6.0\FoodAdviserModels.csproj.CoreCompileInputs.cache
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserModels\obj\Debug\net6.0\FoodAdviserModels.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserModels\obj\Debug\net6.0\ref\FoodAdviserModels.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserModels\obj\Debug\net6.0\FoodAdviserModels.pdb

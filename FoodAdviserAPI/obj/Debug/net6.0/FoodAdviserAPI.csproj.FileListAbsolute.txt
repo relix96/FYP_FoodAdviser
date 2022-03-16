@@ -1,0 +1,76 @@
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserAPI\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserAPI\bin\Debug\net6.0\appsettings.json
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserAPI\bin\Debug\net6.0\FoodAdviserAPI.exe
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserAPI\bin\Debug\net6.0\FoodAdviserAPI.deps.json
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserAPI\bin\Debug\net6.0\FoodAdviserAPI.runtimeconfig.json
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserAPI\bin\Debug\net6.0\FoodAdviserAPI.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserAPI\bin\Debug\net6.0\ref\FoodAdviserAPI.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserAPI\bin\Debug\net6.0\FoodAdviserAPI.pdb
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserAPI\obj\Debug\net6.0\FoodAdviserAPI.csproj.AssemblyReference.cache
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserAPI\obj\Debug\net6.0\FoodAdviserAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserAPI\obj\Debug\net6.0\FoodAdviserAPI.AssemblyInfoInputs.cache
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserAPI\obj\Debug\net6.0\FoodAdviserAPI.AssemblyInfo.cs
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserAPI\obj\Debug\net6.0\FoodAdviserAPI.csproj.CoreCompileInputs.cache
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserAPI\obj\Debug\net6.0\FoodAdviserAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserAPI\obj\Debug\net6.0\FoodAdviserAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserAPI\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserAPI\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserAPI\obj\Debug\net6.0\scopedcss\bundle\FoodAdviserAPI.styles.css
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserAPI\obj\Debug\net6.0\FoodAdviserAPI.csproj.CopyComplete
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserAPI\obj\Debug\net6.0\FoodAdviserAPI.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserAPI\obj\Debug\net6.0\ref\FoodAdviserAPI.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserAPI\obj\Debug\net6.0\FoodAdviserAPI.pdb
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserAPI\obj\Debug\net6.0\FoodAdviserAPI.genruntimeconfig.cache
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserAPI\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserAPI\bin\Debug\net6.0\RestSharp.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserAPI\bin\Debug\net6.0\FoodAdviserModels.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserAPI\bin\Debug\net6.0\FoodAdviserModels.pdb
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserAPI\bin\Debug\net6.0\System.Web.Razor.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserAPI\bin\Debug\net6.0\System.Web.Helpers.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserAPI\bin\Debug\net6.0\System.Web.WebPages.Deployment.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserAPI\bin\Debug\net6.0\System.Web.WebPages.Razor.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserAPI\bin\Debug\net6.0\System.Web.WebPages.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserAPI\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserAPI\bin\Debug\net6.0\Microsoft.Web.Infrastructure.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\FoodAdviserAPI\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserAPI\obj\Debug\net6.0\FoodAdviserAPI.csproj.AssemblyReference.cache
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserAPI\obj\Debug\net6.0\FoodAdviserAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserAPI\obj\Debug\net6.0\FoodAdviserAPI.AssemblyInfoInputs.cache
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserAPI\obj\Debug\net6.0\FoodAdviserAPI.AssemblyInfo.cs
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserAPI\obj\Debug\net6.0\FoodAdviserAPI.csproj.CoreCompileInputs.cache
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserAPI\obj\Debug\net6.0\FoodAdviserAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserAPI\obj\Debug\net6.0\FoodAdviserAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserAPI\obj\Debug\net6.0\FoodAdviserAPI.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserAPI\obj\Debug\net6.0\ref\FoodAdviserAPI.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserAPI\obj\Debug\net6.0\FoodAdviserAPI.pdb
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserAPI\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserAPI\bin\Debug\net6.0\appsettings.json
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserAPI\bin\Debug\net6.0\FoodAdviserAPI.exe
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserAPI\bin\Debug\net6.0\FoodAdviserAPI.deps.json
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserAPI\bin\Debug\net6.0\FoodAdviserAPI.runtimeconfig.json
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserAPI\bin\Debug\net6.0\FoodAdviserAPI.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserAPI\bin\Debug\net6.0\ref\FoodAdviserAPI.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserAPI\bin\Debug\net6.0\FoodAdviserAPI.pdb
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserAPI\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserAPI\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserAPI\bin\Debug\net6.0\RestSharp.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserAPI\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserAPI\bin\Debug\net6.0\FoodAdviserModels.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserAPI\bin\Debug\net6.0\FoodAdviserModels.pdb
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserAPI\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserAPI\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserAPI\obj\Debug\net6.0\scopedcss\bundle\FoodAdviserAPI.styles.css
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserAPI\obj\Debug\net6.0\FoodAdviserAPI.csproj.CopyComplete
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviserAPI\obj\Debug\net6.0\FoodAdviserAPI.genruntimeconfig.cache

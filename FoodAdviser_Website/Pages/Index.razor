@@ -1,0 +1,55 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+@using Food_Adviser.Services
+@using FoodAdviserModels.Models
+@inject IMealService MealService
+
+
+
+<!--Meals-->
+@if (meals == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <div class="row grid-style">
+    @foreach (var meal in meals.recipes)
+    {
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <div class="blog-box">
+                    <div class="post-media">
+                        <a href="food-single.html" title="">
+                            <span class="detail veg">Veg</span>
+                            <img src=@meal.image alt="" class="img-fluid">
+                            <div class="hovereffect"></div>
+                        </a>
+                    </div><!-- end media -->
+
+            <div class="blog-meta big-meta">
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h4><a href="food-single.html" title="">@meal.title</a></h4>
+                        <!--<p>Aenean interdum arcu blandit, vehicula magna non, placerat et pharetratortor.</p>-->
+                        <!--<small><a href="food-single.html" title="">18 July, 2017</a></small>-->
+                        <small><a href="#" title="">@meal.creditsText</a></small>
+                    </div><!-- end meta -->
+        </div><!-- end blog-box -->
+    </div><!-- end col -->
+
+    }
+</div>
+}
+
+
+@code {
+    private Meal meals;
+    protected override async Task OnInitializedAsync() => await GetRandomMeals();
+    private async Task GetRandomMeals() => meals = await MealService.GetRandomMeals();
+}
