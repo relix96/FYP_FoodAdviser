@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "o1nYxd3KFTudX7HrDmaPZZAdxyuKlKx1qkGYNiEkjoyBXVuBA913G4QW+JXojqOKg7fjLID2rTOqdZmSNl6PiQ==",
+  "dgSpecHash": "osVClOyJltMkM1tXeDO5UM7r3uQNeqRxAoktJnrHAuvmmK0nmu3//ZgwcRUbOu4Z0oVJupExQzK/Rqc0BXhtIQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\zemar\\OneDrive\\Ambiente de Trabalho\\Food Adviser\\FoodAdviserAPI\\FoodAdviserAPI.csproj",
+  "projectFilePath": "C:\\Users\\zemar\\OneDrive\\Ambiente de Trabalho\\Repositorios\\FYP_FoodAdviser\\FoodAdviserAPI\\FoodAdviserAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zemar\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\zemar\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",

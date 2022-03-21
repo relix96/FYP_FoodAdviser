@@ -58,3 +58,33 @@ C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviser_Website\ob
 C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviser_Website\obj\Debug\net6.0\ref\Food Adviser.dll
 C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviser_Website\obj\Debug\net6.0\Food Adviser.pdb
 C:\Users\zemar\OneDrive\Ambiente de Trabalho\Food Adviser\FoodAdviser_Website\obj\Debug\net6.0\Food Adviser.genruntimeconfig.cache
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviser_Website\obj\Debug\net6.0\Food Adviser.csproj.AssemblyReference.cache
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviser_Website\obj\Debug\net6.0\Food Adviser.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviser_Website\obj\Debug\net6.0\Food Adviser.AssemblyInfoInputs.cache
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviser_Website\obj\Debug\net6.0\Food Adviser.AssemblyInfo.cs
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviser_Website\obj\Debug\net6.0\Food Adviser.csproj.CoreCompileInputs.cache
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviser_Website\obj\Debug\net6.0\Food Adviser.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviser_Website\obj\Debug\net6.0\Food Adviser.RazorAssemblyInfo.cache
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviser_Website\obj\Debug\net6.0\Food Adviser.RazorAssemblyInfo.cs
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviser_Website\obj\Debug\net6.0\Food Adviser.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviser_Website\obj\Debug\net6.0\ref\Food Adviser.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviser_Website\obj\Debug\net6.0\Food Adviser.pdb
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviser_Website\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviser_Website\bin\Debug\net6.0\appsettings.json
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviser_Website\bin\Debug\net6.0\Food Adviser.staticwebassets.runtime.json
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviser_Website\bin\Debug\net6.0\Food Adviser.exe
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviser_Website\bin\Debug\net6.0\Food Adviser.deps.json
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviser_Website\bin\Debug\net6.0\Food Adviser.runtimeconfig.json
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviser_Website\bin\Debug\net6.0\Food Adviser.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviser_Website\bin\Debug\net6.0\ref\Food Adviser.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviser_Website\bin\Debug\net6.0\Food Adviser.pdb
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviser_Website\bin\Debug\net6.0\FoodAdviserModels.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviser_Website\bin\Debug\net6.0\FoodAdviserModels.pdb
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviser_Website\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviser_Website\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviser_Website\obj\Debug\net6.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviser_Website\obj\Debug\net6.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviser_Website\obj\Debug\net6.0\scopedcss\bundle\Food Adviser.styles.css
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviser_Website\obj\Debug\net6.0\scopedcss\projectbundle\Food Adviser.bundle.scp.css
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviser_Website\obj\Debug\net6.0\Food Adviser.csproj.CopyComplete
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviser_Website\obj\Debug\net6.0\Food Adviser.genruntimeconfig.cache

@@ -574,11 +574,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zemar\\OneDrive\\Ambiente de Trabalho\\Food Adviser\\FoodAdviserAPI\\FoodAdviserAPI.csproj",
+      "projectUniqueName": "C:\\Users\\zemar\\OneDrive\\Ambiente de Trabalho\\Repositorios\\FYP_FoodAdviser\\FoodAdviserAPI\\FoodAdviserAPI.csproj",
       "projectName": "FoodAdviserAPI",
-      "projectPath": "C:\\Users\\zemar\\OneDrive\\Ambiente de Trabalho\\Food Adviser\\FoodAdviserAPI\\FoodAdviserAPI.csproj",
+      "projectPath": "C:\\Users\\zemar\\OneDrive\\Ambiente de Trabalho\\Repositorios\\FYP_FoodAdviser\\FoodAdviserAPI\\FoodAdviserAPI.csproj",
       "packagesPath": "C:\\Users\\zemar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zemar\\OneDrive\\Ambiente de Trabalho\\Food Adviser\\FoodAdviserAPI\\obj\\",
+      "outputPath": "C:\\Users\\zemar\\OneDrive\\Ambiente de Trabalho\\Repositorios\\FYP_FoodAdviser\\FoodAdviserAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\zemar\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -595,8 +595,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\zemar\\OneDrive\\Ambiente de Trabalho\\Food Adviser\\FoodAdviserModels\\FoodAdviserModels.csproj": {
-              "projectPath": "C:\\Users\\zemar\\OneDrive\\Ambiente de Trabalho\\Food Adviser\\FoodAdviserModels\\FoodAdviserModels.csproj"
+            "C:\\Users\\zemar\\OneDrive\\Ambiente de Trabalho\\Repositorios\\FYP_FoodAdviser\\FoodAdviserModels\\FoodAdviserModels.csproj": {
+              "projectPath": "C:\\Users\\zemar\\OneDrive\\Ambiente de Trabalho\\Repositorios\\FYP_FoodAdviser\\FoodAdviserModels\\FoodAdviserModels.csproj"
             }
           }
         }

@@ -1,4 +1,3 @@
-using Food_Adviser.Data;
 using Food_Adviser.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Components;

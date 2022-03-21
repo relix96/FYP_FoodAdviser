@@ -1,5 +1,4 @@
-﻿// Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse);
-public class Us
+﻿public class Us
 {
     public double amount { get; set; }
     public string unitShort { get; set; }
@@ -114,6 +113,21 @@ public class Recipe
 public class Meal
 {
     public List<Recipe> recipes { get; set; }
+    public Meal()
+    {
+        recipes = new List<Recipe>();
+    }
+}
+
+[Serializable]
+public class MealResult
+{
+    
+    public int id { get; set; }   
+
+    public string title { get; set; }
+
+    public string imageType { get; set; }
 }
 
 

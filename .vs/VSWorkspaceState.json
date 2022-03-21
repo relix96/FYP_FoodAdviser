@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\FoodAdviser_Website"
+    "\\FoodAdviser_Website",
+    "\\FoodAdviser_Website\\Pages",
+    "\\FoodAdviser_Website\\Shared"
   ],
-  "SelectedNode": "\\FoodAdviser_Website\\Program.cs",
+  "SelectedNode": "\\FoodAdviser_Website\\Food Adviser.sln",
   "PreviewInSolutionExplorer": false
 }
