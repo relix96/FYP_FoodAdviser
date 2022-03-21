@@ -5,6 +5,7 @@ namespace Food_Adviser.Services
     public interface IMealService
     {
         Task<Meal> GetRandomMeals();
-        Task<List<String>> SearchMealsByName(List<String> meals);
+        Task<List<MealResult>> SearchMealsName(String meals);
+        Task<Meal> GetMealsByName(String meals);
     }
 }

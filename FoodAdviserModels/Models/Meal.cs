@@ -120,8 +120,7 @@ public class Meal
 }
 
 [Serializable]
-public class MealResult
-{
+public class MealResult{
     
     public int id { get; set; }   
 

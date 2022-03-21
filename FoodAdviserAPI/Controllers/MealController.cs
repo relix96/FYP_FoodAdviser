@@ -53,8 +53,8 @@ namespace FoodAdviserAPI.Controllers
             }
         }
         [HttpGet]
-        [Route("SearchMealsName")]
-        public async Task<List<string>?> SearchMealsName(string MealName)
+        [Route("SearchMealsName/{MealName}")]
+        public async Task<List<MealResult>> SearchMealsName(String MealName)
         {
 
             var client = new HttpClient();
@@ -77,16 +77,16 @@ namespace FoodAdviserAPI.Controllers
                 {
                     if (response.IsSuccessStatusCode)
                     {
-                        List<String> mealsNames = new List<String>();
+                        //List<String> mealsNames = new List<String>();
                         string body = response.Content.ReadAsStringAsync().Result;
                         var test = JsonConvert.DeserializeObject(body);
 
                         if (body != null)
                         {
                             List<MealResult> mealsResults = JsonConvert.DeserializeObject<List<MealResult>>(body);
-                            mealsNames = mealsResults.Select(x => x.title).ToList();
+                            //mealsNames = mealsResults.Select(x => x.title).ToList();
                             //Meal meals = await GetMealsById(mealsResults);
-                            return mealsNames != null ? mealsNames : null;
+                            return mealsResults != null ? mealsResults : null;
                         }
 
                         else return null;

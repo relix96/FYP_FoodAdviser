@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4eeLqMBfRkKTy2sNJ+plfxX1tTvAbhVUT/dnkEOXHB8=",
+  "Hash": "GEVuyXvjVAfTnUh6aXQ/haTwt7BcEBhym952MHt6NMM=",
   "Source": "Food Adviser",
   "BasePath": "_content/Food Adviser",
   "Mode": "Default",
@@ -17,10 +17,44 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\zemar\\OneDrive\\Ambiente de Trabalho\\Repositorios\\FYP_FoodAdviser\\FoodAdviser_Website\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Food Adviser.styles.css",
+      "Identity": "C:\\Users\\zemar\\.nuget\\packages\\blazored.typeahead\\4.6.0\\staticwebassets\\blazored-typeahead.css",
+      "SourceId": "Blazored.Typeahead",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\zemar\\.nuget\\packages\\blazored.typeahead\\4.6.0\\staticwebassets\\",
+      "BasePath": "_content/Blazored.Typeahead",
+      "RelativePath": "blazored-typeahead.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\zemar\\.nuget\\packages\\blazored.typeahead\\4.6.0\\staticwebassets\\blazored-typeahead.css"
+    },
+    {
+      "Identity": "C:\\Users\\zemar\\.nuget\\packages\\blazored.typeahead\\4.6.0\\staticwebassets\\blazored-typeahead.js",
+      "SourceId": "Blazored.Typeahead",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\zemar\\.nuget\\packages\\blazored.typeahead\\4.6.0\\staticwebassets\\",
+      "BasePath": "_content/Blazored.Typeahead",
+      "RelativePath": "blazored-typeahead.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\zemar\\.nuget\\packages\\blazored.typeahead\\4.6.0\\staticwebassets\\blazored-typeahead.js"
+    },
+    {
+      "Identity": "C:\\Users\\zemar\\OneDrive\\Ambiente de Trabalho\\Repositorios\\FYP_FoodAdviser\\FoodAdviser_Website\\obj\\x64\\Debug\\net6.0\\scopedcss\\bundle\\Food Adviser.styles.css",
       "SourceId": "Food Adviser",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\zemar\\OneDrive\\Ambiente de Trabalho\\Repositorios\\FYP_FoodAdviser\\FoodAdviser_Website\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\zemar\\OneDrive\\Ambiente de Trabalho\\Repositorios\\FYP_FoodAdviser\\FoodAdviser_Website\\obj\\x64\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Food Adviser",
       "RelativePath": "Food Adviser.styles.css",
       "AssetKind": "All",
@@ -31,13 +65,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\zemar\\OneDrive\\Ambiente de Trabalho\\Repositorios\\FYP_FoodAdviser\\FoodAdviser_Website\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Food Adviser.styles.css"
+      "OriginalItemSpec": "C:\\Users\\zemar\\OneDrive\\Ambiente de Trabalho\\Repositorios\\FYP_FoodAdviser\\FoodAdviser_Website\\obj\\x64\\Debug\\net6.0\\scopedcss\\bundle\\Food Adviser.styles.css"
     },
     {
-      "Identity": "C:\\Users\\zemar\\OneDrive\\Ambiente de Trabalho\\Repositorios\\FYP_FoodAdviser\\FoodAdviser_Website\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Food Adviser.bundle.scp.css",
+      "Identity": "C:\\Users\\zemar\\OneDrive\\Ambiente de Trabalho\\Repositorios\\FYP_FoodAdviser\\FoodAdviser_Website\\obj\\x64\\Debug\\net6.0\\scopedcss\\projectbundle\\Food Adviser.bundle.scp.css",
       "SourceId": "Food Adviser",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\zemar\\OneDrive\\Ambiente de Trabalho\\Repositorios\\FYP_FoodAdviser\\FoodAdviser_Website\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\zemar\\OneDrive\\Ambiente de Trabalho\\Repositorios\\FYP_FoodAdviser\\FoodAdviser_Website\\obj\\x64\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Food Adviser",
       "RelativePath": "Food Adviser.bundle.scp.css",
       "AssetKind": "All",
@@ -48,7 +82,7 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\zemar\\OneDrive\\Ambiente de Trabalho\\Repositorios\\FYP_FoodAdviser\\FoodAdviser_Website\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Food Adviser.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\zemar\\OneDrive\\Ambiente de Trabalho\\Repositorios\\FYP_FoodAdviser\\FoodAdviser_Website\\obj\\x64\\Debug\\net6.0\\scopedcss\\projectbundle\\Food Adviser.bundle.scp.css"
     },
     {
       "Identity": "C:\\Users\\zemar\\OneDrive\\Ambiente de Trabalho\\Repositorios\\FYP_FoodAdviser\\FoodAdviser_Website\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
@@ -83,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\zemar\\OneDrive\\Ambiente de Trabalho\\Repositorios\\FYP_FoodAdviser\\FoodAdviser_Website\\wwwroot\\css\\food_adviser.css",
+      "SourceId": "Food Adviser",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\zemar\\OneDrive\\Ambiente de Trabalho\\Repositorios\\FYP_FoodAdviser\\FoodAdviser_Website\\wwwroot\\",
+      "BasePath": "_content/Food Adviser",
+      "RelativePath": "css/food_adviser.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\food_adviser.css"
     },
     {
       "Identity": "C:\\Users\\zemar\\OneDrive\\Ambiente de Trabalho\\Repositorios\\FYP_FoodAdviser\\FoodAdviser_Website\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",

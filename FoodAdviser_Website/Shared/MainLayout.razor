@@ -1,6 +1,11 @@
 ﻿@inherits LayoutComponentBase
 
 <PageTitle>Food Adviser</PageTitle>
+@using Food_Adviser.Services
+@using FoodAdviserModels.Models
+@using Blazored.Typeahead
+
+@inject IMealService MealService
 
 <div class="page">
     <div class="sidebar">
@@ -8,18 +13,45 @@
     </div>
 
     <main>
-        <div class="top-row px-4">
-            <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
-        </div>
-        <form autocomplete="off" action="/action_page.php">
-            <div class="autocomplete" style="width:300px;">
-                <input id="myInput" type="text" name="myCountry" placeholder="Country">
+        <BlazoredTypeahead SearchMethod="@SearchMeal" @bind-Value="SelectedMeal">
+            <SelectedTemplate>
+                @context.title         
+            </SelectedTemplate>
+
+            <ResultTemplate>
+                @context.title
+            </ResultTemplate>
+            <NotFoundTemplate>
+                Sorry, there weren't any meal found.
+            </NotFoundTemplate>
+        </BlazoredTypeahead>
+
+        <div class="top-row px-4 ">
+            <div class="input-group mb-3 col-sm-3">
+                <input id="searchMealByName"  type="text" class="form-control" aria-label="Search for meals">
             </div>
-            <input type="submit">
-        </form>
+        </div>
 
         <article class="content px-4">
             @Body
         </article>
     </main>
 </div>
+
+
+
+@code{
+    private MealResult SelectedMeal = new MealResult();
+
+    private async Task<IEnumerable<MealResult>> SearchMeal(string searchMeal)
+    {
+        var response = await MealService.SearchMealsName(searchMeal);
+
+        return response;
+
+    }
+
+
+}
+
+

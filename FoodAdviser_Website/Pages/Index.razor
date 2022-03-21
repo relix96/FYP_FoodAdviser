@@ -10,7 +10,7 @@
 <!--Meals-->
 @if (meals == null)
 {
-    <p><em>Loading...</em></p>
+    <p><em>No meals were found.</em></p>
 }
 else
 {
@@ -44,5 +44,5 @@ else
 @code {
     private Meal meals;
     protected override async Task OnInitializedAsync() => await GetRandomMeals();
-    private async Task GetRandomMeals() => meals = await MealService.GetRandomMeals();
+    private async Task<Meal> GetRandomMeals() => meals = await MealService.GetRandomMeals();
 }

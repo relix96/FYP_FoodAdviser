@@ -10,12 +10,13 @@
   "profiles": {
     "Food Adviser": {
       "commandName": "Project",
-      "dotnetRunMessages": true,
       "launchBrowser": true,
-      "applicationUrl": "https://localhost:7095;http://localhost:5095",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      }
+      },
+      "applicationUrl": "https://localhost:7095;http://localhost:5095",
+      "dotnetRunMessages": true,
+      "nativeDebugging": false
     },
     "IIS Express": {
       "commandName": "IISExpress",

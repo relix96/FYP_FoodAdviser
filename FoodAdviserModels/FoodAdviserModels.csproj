@@ -10,4 +10,8 @@
     <Compile Remove="Class1.cs" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Blazored.Typeahead" Version="4.6.0" />
+  </ItemGroup>
+
 </Project>

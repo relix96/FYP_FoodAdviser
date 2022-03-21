@@ -15,8 +15,12 @@ namespace Food_Adviser.Services
 
         public async Task<Meal> GetRandomMeals() =>
             await httpClient.GetFromJsonAsync<Meal>("api/Meal/GetRandomMeals");
-        public async Task<List<String>> SearchMealsByName(List<String> meals) =>
-            await httpClient.GetFromJsonAsync<List<String>>("api/Meal/SearchMealsByName");
-       
+        public async Task<List<MealResult>> SearchMealsName(String mealName) =>
+            await httpClient.GetFromJsonAsync<List<MealResult>>($"api/Meal/SearchMealsName/{mealName}");
+
+        public async Task<Meal> GetMealsByName(String meals) =>
+            await httpClient.GetFromJsonAsync<Meal>("api/Meal/SearchMealsByName");
+
+
     }
 }

@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "FoodAdviserAPI/1.0.0": {
         "dependencies": {
+          "Blazored.Typeahead": "4.6.0",
           "FoodAdviserModels": "1.0.0",
           "Newtonsoft.Json": "13.0.1",
           "RestSharp": "107.3.0",
@@ -18,8 +19,63 @@
           "FoodAdviserAPI.dll": {}
         }
       },
+      "Blazored.Typeahead/4.6.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.1.2",
+          "Microsoft.AspNetCore.Components.Web": "3.1.2"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Blazored.Typeahead.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Authorization/3.1.2": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Metadata": "3.1.2",
+          "Microsoft.Extensions.Logging.Abstractions": "3.1.2",
+          "Microsoft.Extensions.Options": "3.1.2"
+        }
+      },
+      "Microsoft.AspNetCore.Components/3.1.2": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "3.1.2",
+          "Microsoft.AspNetCore.Components.Analyzers": "3.1.2",
+          "Microsoft.JSInterop": "3.1.2"
+        }
+      },
+      "Microsoft.AspNetCore.Components.Analyzers/3.1.2": {},
+      "Microsoft.AspNetCore.Components.Forms/3.1.2": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.1.2"
+        }
+      },
+      "Microsoft.AspNetCore.Components.Web/3.1.2": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.1.2",
+          "Microsoft.AspNetCore.Components.Forms": "3.1.2",
+          "Microsoft.Extensions.DependencyInjection": "3.1.2",
+          "Microsoft.JSInterop": "3.1.2"
+        }
+      },
+      "Microsoft.AspNetCore.Metadata/3.1.2": {},
       "Microsoft.CSharp/4.5.0": {},
       "Microsoft.Extensions.ApiDescription.Server/3.0.0": {},
+      "Microsoft.Extensions.DependencyInjection/3.1.2": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.2"
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.2": {},
+      "Microsoft.Extensions.Logging.Abstractions/3.1.2": {},
+      "Microsoft.Extensions.Options/3.1.2": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.2",
+          "Microsoft.Extensions.Primitives": "3.1.2"
+        }
+      },
+      "Microsoft.Extensions.Primitives/3.1.2": {},
       "Microsoft.IdentityModel.JsonWebTokens/6.16.0": {
         "dependencies": {
           "Microsoft.IdentityModel.Tokens": "6.16.0"
@@ -52,6 +108,7 @@
           }
         }
       },
+      "Microsoft.JSInterop/3.1.2": {},
       "Microsoft.OpenApi/1.2.3": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.OpenApi.dll": {
@@ -128,6 +185,9 @@
       },
       "System.Security.Cryptography.Cng/4.5.0": {},
       "FoodAdviserModels/1.0.0": {
+        "dependencies": {
+          "Blazored.Typeahead": "4.6.0"
+        },
         "runtime": {
           "FoodAdviserModels.dll": {}
         }
@@ -139,6 +199,55 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Blazored.Typeahead/4.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eYViTbA5DmsaUmPO3tUzDxahido811vU0/mNtGfIkA4SqTxN2VAwRJgCmoVxFiHwVWtPjVcNGIpUI44lTe24bg==",
+      "path": "blazored.typeahead/4.6.0",
+      "hashPath": "blazored.typeahead.4.6.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Authorization/3.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bbu9qMsOdmNjLLaRawhT3OfjFHleK9D2ICGfmjvkMVNyfx42P5NgypOlqKgK6SDoqtex3DisWd4E3nePtohPCw==",
+      "path": "microsoft.aspnetcore.authorization/3.1.2",
+      "hashPath": "microsoft.aspnetcore.authorization.3.1.2.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Components/3.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lLY10dGm/egqidXfAqBBbe2ANQGekv+ospuTGkDbmHoBC5MVRYk5iQIqOUVCSnxY9s2kFh3YsTZ6ElU9Cv9i3w==",
+      "path": "microsoft.aspnetcore.components/3.1.2",
+      "hashPath": "microsoft.aspnetcore.components.3.1.2.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Components.Analyzers/3.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-inGAaJU8Qxxvw/BuimJ/L2P8yxlsI3EwMPBuwNCL5PZ5GOwEjNCTEGRRicqMM7W8NgwCrbsI7489o5Xkr/Cx/w==",
+      "path": "microsoft.aspnetcore.components.analyzers/3.1.2",
+      "hashPath": "microsoft.aspnetcore.components.analyzers.3.1.2.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Components.Forms/3.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fTL2kS8vNJadi6UVRlOeZqIhrulWKWr3Uy2zVoo2vMAkyOs2AoGq9mTUZHU2S6okpHiD9ovexil2n1bERFm2/w==",
+      "path": "microsoft.aspnetcore.components.forms/3.1.2",
+      "hashPath": "microsoft.aspnetcore.components.forms.3.1.2.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Components.Web/3.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tkPkm2WlqhWh54KsWfJzdsIiSIlTpvVE2hSlwbeUDNq5bMwVc1WdBakNGblYpQKdrliBlxIg0QOZg4YqAJyBKw==",
+      "path": "microsoft.aspnetcore.components.web/3.1.2",
+      "hashPath": "microsoft.aspnetcore.components.web.3.1.2.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Metadata/3.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4ML2fUxRyfrpXnAppHi8c7MDiTOr9yJ5/Sp6p8XktVw8H5CJJSs6KesM/mc9vREpg6FgC8EvgDRNKom6PLPcjQ==",
+      "path": "microsoft.aspnetcore.metadata/3.1.2",
+      "hashPath": "microsoft.aspnetcore.metadata.3.1.2.nupkg.sha512"
     },
     "Microsoft.CSharp/4.5.0": {
       "type": "package",
@@ -153,6 +262,41 @@
       "sha512": "sha512-LH4OE/76F6sOCslif7+Xh3fS/wUUrE5ryeXAMcoCnuwOQGT5Smw0p57IgDh/pHgHaGz/e+AmEQb7pRgb++wt0w==",
       "path": "microsoft.extensions.apidescription.server/3.0.0",
       "hashPath": "microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection/3.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-e+F6/wjQPOFHB/sGWTAqC8FX/C6+JZWWLpryXTAQYIS3tr+17lByADdP9Y6RtxfJ4kW/IPrU6RuxTNZNdAQz1A==",
+      "path": "microsoft.extensions.dependencyinjection/3.1.2",
+      "hashPath": "microsoft.extensions.dependencyinjection.3.1.2.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/CZzCSCIm/3FFoXHfUpsfov/Elo268dcvlz/MMINT0vPgphqg2pAgdEn/EjCDyoAT3NAmsRmjfGwBumC1uYJtA==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/3.1.2",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.3.1.2.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Abstractions/3.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cIXPw7VVX3fON4uuHwJFmCi0qDl8uY75xZMKB2oM3In0ZDEB1Ee+p9Ti1DSw92AwRtJ2Zh+QG1joTBednJMzvA==",
+      "path": "microsoft.extensions.logging.abstractions/3.1.2",
+      "hashPath": "microsoft.extensions.logging.abstractions.3.1.2.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Options/3.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6F4anwt9yMlnQckac2etjrasRFyqZNIp46p+i9qVps0DXNsOLZIKRkqq4AY4FlxXxKeGkEJC7M77RQEkvd3p8Q==",
+      "path": "microsoft.extensions.options/3.1.2",
+      "hashPath": "microsoft.extensions.options.3.1.2.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Primitives/3.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WGtoFWY9yc9HGMG6ObDNQPz9dBP+xz/GqFe2dKjdE/cSdXFEKxCFTyYCzL/e8kxVkc/Bq9qjOsXRWydvn0g9Uw==",
+      "path": "microsoft.extensions.primitives/3.1.2",
+      "hashPath": "microsoft.extensions.primitives.3.1.2.nupkg.sha512"
     },
     "Microsoft.IdentityModel.JsonWebTokens/6.16.0": {
       "type": "package",
@@ -174,6 +318,13 @@
       "sha512": "sha512-dL7r4bdRbDG0RmyYGw9cpO/pA3GVaxV+lI1ConYuQuRiAxd1ONFlxHue1o8wR8+lEB972cekzfj45WSNaq3+xA==",
       "path": "microsoft.identitymodel.tokens/6.16.0",
       "hashPath": "microsoft.identitymodel.tokens.6.16.0.nupkg.sha512"
+    },
+    "Microsoft.JSInterop/3.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-36NPmMYZ8L97/iJTd3ezY3Hrxh7XDbSOElQnZQ6eJpXD7bm1idX4NyUKKTGnmf3WPDzXwEDXvpOL2stiFxkcpA==",
+      "path": "microsoft.jsinterop/3.1.2",
+      "hashPath": "microsoft.jsinterop.3.1.2.nupkg.sha512"
     },
     "Microsoft.OpenApi/1.2.3": {
       "type": "package",
