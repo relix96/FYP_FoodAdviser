@@ -1,9 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\FoodAdviserAPI",
+    "\\FoodAdviserModels",
     "\\FoodAdviser_Website",
-    "\\FoodAdviser_Website\\Pages",
-    "\\FoodAdviser_Website\\Shared"
+    "\\FoodAdviser_Website\\Pages"
   ],
   "SelectedNode": "\\FoodAdviser_Website\\Food Adviser.sln",
   "PreviewInSolutionExplorer": false

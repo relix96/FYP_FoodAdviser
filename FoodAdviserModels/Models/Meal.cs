@@ -71,6 +71,7 @@ public class AnalyzedInstruction
     public List<Step> steps { get; set; }
 }
 
+[Serializable]
 public class Recipe
 {
     public bool vegetarian { get; set; }
@@ -110,6 +111,8 @@ public class Recipe
     public string spoonacularSourceUrl { get; set; }
 }
 
+
+[Serializable]
 public class Meal
 {
     public List<Recipe> recipes { get; set; }

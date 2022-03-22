@@ -19,7 +19,7 @@ namespace Food_Adviser.Services
             await httpClient.GetFromJsonAsync<List<MealResult>>($"api/Meal/SearchMealsName/{mealName}");
 
         public async Task<Meal> GetMealsByName(String meals) =>
-            await httpClient.GetFromJsonAsync<Meal>("api/Meal/SearchMealsByName");
+            await httpClient.GetFromJsonAsync<Meal>($"api/Meal/SearchMealsByName/{meals}");
 
 
     }

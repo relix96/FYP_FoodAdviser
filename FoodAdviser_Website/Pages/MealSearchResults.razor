@@ -1,6 +1,5 @@
-﻿@page "/"
+﻿@page "/search/{mealResult}"
 
-<PageTitle>Index</PageTitle>
 @using Microsoft.AspNetCore.Components.Web
 @using Food_Adviser.Services
 @using FoodAdviserModels.Models
@@ -8,7 +7,6 @@
 
 
 
-<!--Meals-->
 @if (meals == null)
 {
     <p><em>No meals were found.</em></p>
@@ -41,9 +39,14 @@ else
     </div>
 }
 
-
 @code {
-    private Meal meals;    
-    protected override async Task OnInitializedAsync() => await GetRandomMeals();
-    private async Task<Meal> GetRandomMeals() => meals = await MealService.GetRandomMeals();
+    [Parameter]
+    public Meal meals { get; set; } = new Meal();
+
+    [Parameter]
+    public String mealResult{ get; set; } ="";
+
+    protected override async Task OnInitializedAsync() => await GetSearchMealsByName(mealResult);
+    private async Task<Meal> GetSearchMealsByName(String mealResult) => meals = await MealService.GetMealsByName(mealResult);
+
 }

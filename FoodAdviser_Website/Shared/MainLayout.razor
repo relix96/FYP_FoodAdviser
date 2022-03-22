@@ -4,7 +4,9 @@
 @using Food_Adviser.Services
 @using FoodAdviserModels.Models
 @using Blazored.Typeahead
+@using Food_Adviser.Pages
 
+@inject NavigationManager navigationManager
 @inject IMealService MealService
 
 <div class="page">
@@ -13,24 +15,22 @@
     </div>
 
     <main>
-        <BlazoredTypeahead SearchMethod="@SearchMeal" @bind-Value="SelectedMeal">
-            <SelectedTemplate>
-                @context.title         
-            </SelectedTemplate>
-
-            <ResultTemplate>
-                @context.title
-            </ResultTemplate>
-            <NotFoundTemplate>
-                Sorry, there weren't any meal found.
-            </NotFoundTemplate>
-        </BlazoredTypeahead>
-
         <div class="top-row px-4 ">
-            <div class="input-group mb-3 col-sm-3">
-                <input id="searchMealByName"  type="text" class="form-control" aria-label="Search for meals">
+            <div class="input-group mb-3 col-sm-3 justify-content-center">
+                <BlazoredTypeahead SearchMethod="@SearchMeal" TValue="MealResult" TItem="MealResult" Value="mealResult" ValueChanged="HandleSearch" ValueExpression="@(()=> mealResult)" placeholder="Search">
+                    <SelectedTemplate>
+                        @context.title         
+                    </SelectedTemplate>
+
+                    <ResultTemplate>
+                        @context.title
+                    </ResultTemplate>
+                    <NotFoundTemplate>
+                        Sorry, there weren't any meal found.
+                    </NotFoundTemplate>
+                </BlazoredTypeahead>
             </div>
-        </div>
+        </div>           
 
         <article class="content px-4">
             @Body
@@ -41,14 +41,22 @@
 
 
 @code{
-    private MealResult SelectedMeal = new MealResult();
+
+    [Parameter]
+    public MealResult mealResult{ get; set; } = new MealResult();
 
     private async Task<IEnumerable<MealResult>> SearchMeal(string searchMeal)
     {
         var response = await MealService.SearchMealsName(searchMeal);
 
         return response;
+    }
 
+    private void HandleSearch(MealResult _mealResult)
+    {
+        if (_mealResult == null) return;
+        mealResult = _mealResult;
+        navigationManager.NavigateTo($"/search/{mealResult.title}");
     }
 
 
