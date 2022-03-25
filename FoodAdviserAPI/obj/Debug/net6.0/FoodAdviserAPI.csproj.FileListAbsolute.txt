@@ -111,3 +111,10 @@ C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAd
 C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviserAPI\obj\Debug\net6.0\ref\FoodAdviserAPI.dll
 C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviserAPI\obj\Debug\net6.0\FoodAdviserAPI.pdb
 C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviserAPI\obj\Debug\net6.0\FoodAdviserAPI.genruntimeconfig.cache
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviserAPI\bin\Debug\net6.0\Syncfusion.Blazor.Buttons.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviserAPI\bin\Debug\net6.0\Syncfusion.Blazor.Core.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviserAPI\bin\Debug\net6.0\Syncfusion.Blazor.Popups.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviserAPI\bin\Debug\net6.0\Syncfusion.Blazor.Spinner.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviserAPI\bin\Debug\net6.0\Syncfusion.Blazor.SplitButtons.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviserAPI\bin\Debug\net6.0\Syncfusion.Blazor.Themes.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviserAPI\bin\Debug\net6.0\Syncfusion.Licensing.dll

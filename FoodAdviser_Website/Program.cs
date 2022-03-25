@@ -2,10 +2,12 @@ using Food_Adviser.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
+using Syncfusion.Blazor;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<MealService>();
@@ -13,6 +15,8 @@ builder.Services.AddHttpClient<IMealService, MealService>(client =>
 {
     client.BaseAddress = new Uri("https://localhost:7176/");
 });
+
+builder.Services.AddSyncfusionBlazor();
 
 
 var app = builder.Build();
