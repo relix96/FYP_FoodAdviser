@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using RestSharp;
 
 namespace FoodAdviserAPI.Controllers
 {
@@ -14,6 +15,7 @@ namespace FoodAdviserAPI.Controllers
         {
             try
             {
+                //string body = await getRandomMeals();
                 string body = await getRandomMeals();
                 if (body != null)
                 {
@@ -21,7 +23,7 @@ namespace FoodAdviserAPI.Controllers
                     return Ok(meals);
                 }
                 else return BadRequest();
-                    
+
             }
             catch (Exception ex)
             {
@@ -29,7 +31,7 @@ namespace FoodAdviserAPI.Controllers
             }
 
 
-            
+
         }
         [HttpGet]
         [Route("SearchMealsName/{MealName}")]
@@ -81,7 +83,7 @@ namespace FoodAdviserAPI.Controllers
             }
         }
 
-        
+
 
         [HttpGet]
         [Route("SearchMealsByName/{mealName}")]
@@ -95,7 +97,8 @@ namespace FoodAdviserAPI.Controllers
                 {
                     List<MealResult> mealsResults = JsonConvert.DeserializeObject<List<MealResult>>(meal);
                     Meal meals = await GetMealsById(mealsResults);
-                    return meals != null ? Ok(meals) : BadRequest();                }
+                    return meals != null ? Ok(meals) : BadRequest();
+                }
 
                 else return BadRequest();
 
@@ -182,7 +185,7 @@ namespace FoodAdviserAPI.Controllers
             return null;
         }
 
-        private async Task <String> getRandomMeals()
+        private async Task<String> getRandomMeals()
         {
             var client = new HttpClient();
             var request = new HttpRequestMessage
@@ -214,7 +217,10 @@ namespace FoodAdviserAPI.Controllers
 
             return null;
         }
+        
 
     }
 
 }
+
+

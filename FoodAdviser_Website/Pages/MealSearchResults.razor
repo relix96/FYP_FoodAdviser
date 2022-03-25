@@ -46,7 +46,7 @@ else
     [Parameter]
     public String mealResult{ get; set; } ="";
 
-    protected override async Task OnInitializedAsync() => await GetSearchMealsByName(mealResult);
+    protected override async Task OnParametersSetAsync() => await GetSearchMealsByName(mealResult);
     private async Task<Meal> GetSearchMealsByName(String mealResult) => meals = await MealService.GetMealsByName(mealResult);
 
 }

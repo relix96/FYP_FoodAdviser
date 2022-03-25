@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "wDcw/eRavBXmtaQZIImaqGXAQf0u8+wB9+ExviwIQcXE+kJ5QJnwahPmzYsnfRraP9Rj/4fg3LalTOhYXberkQ==",
+  "dgSpecHash": "ECg3WPkT+eHpp6PUd29mC9lOl68Fi2YxaGC9FyubggUfMfUthQuXqIALqgCReLd70GTbeob0p6Fv9HCuW0IMmg==",
   "success": true,
   "projectFilePath": "C:\\Users\\zemar\\OneDrive\\Ambiente de Trabalho\\Repositorios\\FYP_FoodAdviser\\FoodAdviserModels\\FoodAdviserModels.csproj",
   "expectedPackageFiles": [
@@ -16,7 +16,8 @@
     "C:\\Users\\zemar\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.2\\microsoft.extensions.logging.abstractions.3.1.2.nupkg.sha512",
     "C:\\Users\\zemar\\.nuget\\packages\\microsoft.extensions.options\\3.1.2\\microsoft.extensions.options.3.1.2.nupkg.sha512",
     "C:\\Users\\zemar\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.2\\microsoft.extensions.primitives.3.1.2.nupkg.sha512",
-    "C:\\Users\\zemar\\.nuget\\packages\\microsoft.jsinterop\\3.1.2\\microsoft.jsinterop.3.1.2.nupkg.sha512"
+    "C:\\Users\\zemar\\.nuget\\packages\\microsoft.jsinterop\\3.1.2\\microsoft.jsinterop.3.1.2.nupkg.sha512",
+    "C:\\Users\\zemar\\.nuget\\packages\\restsharp\\107.3.0\\restsharp.107.3.0.nupkg.sha512"
   ],
   "logs": []
 }

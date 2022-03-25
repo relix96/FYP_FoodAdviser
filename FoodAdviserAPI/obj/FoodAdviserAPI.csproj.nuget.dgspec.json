@@ -126,6 +126,10 @@
             "Blazored.Typeahead": {
               "target": "Package",
               "version": "[4.6.0, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[107.3.0, )"
             }
           },
           "imports": [

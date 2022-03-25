@@ -317,7 +317,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Blazored.Typeahead": "4.6.0"
+          "Blazored.Typeahead": "4.6.0",
+          "RestSharp": "107.3.0"
         },
         "compile": {
           "bin/placeholder/FoodAdviserModels.dll": {}

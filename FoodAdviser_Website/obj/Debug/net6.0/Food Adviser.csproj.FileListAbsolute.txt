@@ -91,3 +91,4 @@ C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAd
 C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviser_Website\obj\Debug\net6.0\Food Adviser.genruntimeconfig.cache
 C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviser_Website\obj\Debug\net6.0\Food_Adviser.Properties.Resources.resources
 C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviser_Website\obj\Debug\net6.0\Food Adviser.csproj.GenerateResource.cache
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviser_Website\bin\Debug\net6.0\RestSharp.dll

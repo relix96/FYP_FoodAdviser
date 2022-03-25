@@ -9,7 +9,8 @@
       "Food Adviser/1.0.0": {
         "dependencies": {
           "Blazored.Typeahead": "4.6.0",
-          "FoodAdviserModels": "1.0.0"
+          "FoodAdviserModels": "1.0.0",
+          "RestSharp": "107.3.0"
         },
         "runtime": {
           "Food Adviser.dll": {}
@@ -71,9 +72,18 @@
       },
       "Microsoft.Extensions.Primitives/3.1.2": {},
       "Microsoft.JSInterop/3.1.2": {},
+      "RestSharp/107.3.0": {
+        "runtime": {
+          "lib/net6.0/RestSharp.dll": {
+            "assemblyVersion": "107.3.0.0",
+            "fileVersion": "107.3.0.0"
+          }
+        }
+      },
       "FoodAdviserModels/1.0.0": {
         "dependencies": {
-          "Blazored.Typeahead": "4.6.0"
+          "Blazored.Typeahead": "4.6.0",
+          "RestSharp": "107.3.0"
         },
         "runtime": {
           "FoodAdviserModels.dll": {}
@@ -177,6 +187,13 @@
       "sha512": "sha512-36NPmMYZ8L97/iJTd3ezY3Hrxh7XDbSOElQnZQ6eJpXD7bm1idX4NyUKKTGnmf3WPDzXwEDXvpOL2stiFxkcpA==",
       "path": "microsoft.jsinterop/3.1.2",
       "hashPath": "microsoft.jsinterop.3.1.2.nupkg.sha512"
+    },
+    "RestSharp/107.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qu+A+VAnVLX3OeWVNm11UJz0aVErqSfYqIiOUbJM9x98uLymCOoL/oXRAjMb6XHra27WXxHmzy9EKEOKXWR6Pw==",
+      "path": "restsharp/107.3.0",
+      "hashPath": "restsharp.107.3.0.nupkg.sha512"
     },
     "FoodAdviserModels/1.0.0": {
       "type": "project",
