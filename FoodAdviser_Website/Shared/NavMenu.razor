@@ -1,4 +1,6 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
+﻿@using FoodAdviserModels.Models
+
+<div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="">Food Adviser</a>
         <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
@@ -27,7 +29,24 @@
     </nav>
 </div>
 
+<div>
+
+</div>
+
 @code {
+
+    [Parameter]
+    public List<String> Diet{ get;set;} = new List<String>();
+
+    [Parameter]
+    public List<String> Intolerance{ get;set;} = new List<String>();
+
+    [Parameter]
+    public List<String> Cuisine{ get;set;} = new List<String>();
+
+    [Parameter]
+    public List<String> Type{ get;set;} = new List<String>();
+
     private bool collapseNavMenu = true;
 
     private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
@@ -35,5 +54,26 @@
     private void ToggleNavMenu()
     {
         collapseNavMenu = !collapseNavMenu;
+        GetFilters();
     }
+
+
+    protected override async Task OnInitializedAsync() => await GetFilters();
+
+        private  async Task<List<List<String>>> GetFilters()
+    {
+        List<List<String>> filters = new List<List<String>>();
+        Diet = Enum.GetNames(typeof(Filter.Diet)).ToList();
+        Intolerance = Enum.GetNames(typeof(Filter.Intolerance)).ToList();
+        Cuisine = Enum.GetNames(typeof(Filter.Cuisine)).ToList();
+        Type = Enum.GetNames(typeof(Filter.Type)).ToList();
+
+        filters.Add(Diet);
+        filters.Add(Intolerance);
+        filters.Add(Cuisine);
+        filters.Add(Type);
+        return filters;
+    }
+
+
 }

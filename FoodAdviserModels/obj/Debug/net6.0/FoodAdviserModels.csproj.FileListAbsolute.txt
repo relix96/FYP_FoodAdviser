@@ -33,3 +33,4 @@ C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAd
 C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviserModels\obj\Debug\net6.0\FoodAdviserModels.dll
 C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviserModels\obj\Debug\net6.0\ref\FoodAdviserModels.dll
 C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviserModels\obj\Debug\net6.0\FoodAdviserModels.pdb
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviserModels\obj\Debug\net6.0\FoodAdviserModels.csproj.AssemblyReference.cache

@@ -16,7 +16,7 @@ namespace Food_Adviser.Services
             this.httpClient = _httpClient;
         }
 
-
+ 
         public async Task<Meal> GetRandomMeals()
         {
             return await httpClient.GetFromJsonAsync<Meal>("api/Meal/GetRandomMeals");

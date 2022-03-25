@@ -46,4 +46,6 @@ else
     private Meal meals;    
     protected override async Task OnInitializedAsync() => await GetRandomMeals();
     private async Task<Meal> GetRandomMeals() => meals = await MealService.GetRandomMeals();
+
+
 }
