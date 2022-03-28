@@ -118,3 +118,6 @@ C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAd
 C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviserAPI\bin\Debug\net6.0\Syncfusion.Blazor.SplitButtons.dll
 C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviserAPI\bin\Debug\net6.0\Syncfusion.Blazor.Themes.dll
 C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviserAPI\bin\Debug\net6.0\Syncfusion.Licensing.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviserAPI\bin\Debug\net6.0\Syncfusion.Blazor.Data.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviserAPI\bin\Debug\net6.0\Syncfusion.Blazor.DropDowns.dll
+C:\Users\zemar\OneDrive\Ambiente de Trabalho\Repositorios\FYP_FoodAdviser\FoodAdviserAPI\bin\Debug\net6.0\Syncfusion.Blazor.Inputs.dll

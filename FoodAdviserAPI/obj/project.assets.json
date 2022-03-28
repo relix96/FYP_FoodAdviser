@@ -335,6 +335,68 @@
           "buildMultiTargeting/Syncfusion.Blazor.Core.props": {}
         }
       },
+      "Syncfusion.Blazor.Data/19.4.0.56": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Core": "19.4.0.56"
+        },
+        "compile": {
+          "lib/net6.0/Syncfusion.Blazor.Data.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Syncfusion.Blazor.Data.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.Data.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.Data.props": {}
+        }
+      },
+      "Syncfusion.Blazor.DropDowns/19.4.0.56": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Buttons": "19.4.0.56",
+          "Syncfusion.Blazor.Core": "19.4.0.56",
+          "Syncfusion.Blazor.Data": "19.4.0.56",
+          "Syncfusion.Blazor.Inputs": "19.4.0.56",
+          "Syncfusion.Blazor.Spinner": "19.4.0.56"
+        },
+        "compile": {
+          "lib/net6.0/Syncfusion.Blazor.DropDowns.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Syncfusion.Blazor.DropDowns.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.DropDowns.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.DropDowns.props": {}
+        }
+      },
+      "Syncfusion.Blazor.Inputs/19.4.0.56": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Core": "19.4.0.56",
+          "Syncfusion.Blazor.Data": "19.4.0.56",
+          "Syncfusion.Blazor.Popups": "19.4.0.56",
+          "Syncfusion.Blazor.Spinner": "19.4.0.56",
+          "Syncfusion.Blazor.SplitButtons": "19.4.0.56"
+        },
+        "compile": {
+          "lib/net6.0/Syncfusion.Blazor.Inputs.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Syncfusion.Blazor.Inputs.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.Inputs.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.Inputs.props": {}
+        }
+      },
       "Syncfusion.Blazor.Popups/19.4.0.56": {
         "type": "package",
         "dependencies": {
@@ -512,6 +574,7 @@
         "dependencies": {
           "Blazored.Typeahead": "4.6.0",
           "RestSharp": "107.3.0",
+          "Syncfusion.Blazor.DropDowns": "19.4.0.56",
           "Syncfusion.Blazor.SplitButtons": "19.4.0.56"
         },
         "compile": {
@@ -1157,6 +1220,90 @@
         "syncfusion_logo.png"
       ]
     },
+    "Syncfusion.Blazor.Data/19.4.0.56": {
+      "sha512": "VJnaMxpBDH5byQO4OxpzcXD9e4hoOYAxtLEZD5Q9ajSLLNZo+MkUwch3AlWraUY/r9ZVRTsF2Jj7dVIWnLcK5w==",
+      "type": "package",
+      "path": "syncfusion.blazor.data/19.4.0.56",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.Data.props",
+        "buildMultiTargeting/Syncfusion.Blazor.Data.props",
+        "buildTransitive/Syncfusion.Blazor.Data.props",
+        "lib/net5.0/Syncfusion.Blazor.Data.dll",
+        "lib/net5.0/Syncfusion.Blazor.Data.xml",
+        "lib/net6.0/Syncfusion.Blazor.Data.dll",
+        "lib/net6.0/Syncfusion.Blazor.Data.xml",
+        "lib/netstandard2.1/Syncfusion.Blazor.Data.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.Data.xml",
+        "staticwebassets/scripts/data-169302.min.js",
+        "syncfusion.blazor.data.19.4.0.56.nupkg.sha512",
+        "syncfusion.blazor.data.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.Blazor.DropDowns/19.4.0.56": {
+      "sha512": "IPQq05cCUAgOULwD/ewaoFy9h/sq1a/+iJg004qdlO2RsDN2IX0dc0idtlmjH3a+GTSuM8eGmcfpQOHKGDT1ZQ==",
+      "type": "package",
+      "path": "syncfusion.blazor.dropdowns/19.4.0.56",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.DropDowns.props",
+        "buildMultiTargeting/Syncfusion.Blazor.DropDowns.props",
+        "buildTransitive/Syncfusion.Blazor.DropDowns.props",
+        "lib/net5.0/Syncfusion.Blazor.DropDowns.dll",
+        "lib/net5.0/Syncfusion.Blazor.DropDowns.xml",
+        "lib/net6.0/Syncfusion.Blazor.DropDowns.dll",
+        "lib/net6.0/Syncfusion.Blazor.DropDowns.xml",
+        "lib/netstandard2.1/Syncfusion.Blazor.DropDowns.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.DropDowns.xml",
+        "staticwebassets/scripts/sf-dropdownlist-169302.min.js",
+        "staticwebassets/scripts/sf-listbox-169302.min.js",
+        "staticwebassets/scripts/sf-multiselect-169302.min.js",
+        "staticwebassets/scripts/sortable-169302.min.js",
+        "syncfusion.blazor.dropdowns.19.4.0.56.nupkg.sha512",
+        "syncfusion.blazor.dropdowns.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.Blazor.Inputs/19.4.0.56": {
+      "sha512": "5wtr9UZ7EWAM+jaj1gQxSrJKRc2yHcjCgnlVWYLRwS7MNM69IAV2vBF9TogO8lOPWG0VU6hEUMYoRKXm7v0XfQ==",
+      "type": "package",
+      "path": "syncfusion.blazor.inputs/19.4.0.56",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.Inputs.props",
+        "buildMultiTargeting/Syncfusion.Blazor.Inputs.props",
+        "buildTransitive/Syncfusion.Blazor.Inputs.props",
+        "lib/net5.0/Syncfusion.Blazor.Inputs.dll",
+        "lib/net5.0/Syncfusion.Blazor.Inputs.xml",
+        "lib/net6.0/Syncfusion.Blazor.Inputs.dll",
+        "lib/net6.0/Syncfusion.Blazor.Inputs.xml",
+        "lib/netstandard2.1/Syncfusion.Blazor.Inputs.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.Inputs.xml",
+        "staticwebassets/scripts/sf-colorpicker-169302.min.js",
+        "staticwebassets/scripts/sf-maskedtextbox-169302.min.js",
+        "staticwebassets/scripts/sf-numerictextbox-169302.min.js",
+        "staticwebassets/scripts/sf-signature-169302.min.js",
+        "staticwebassets/scripts/sf-slider-169302.min.js",
+        "staticwebassets/scripts/sf-textbox-169302.min.js",
+        "staticwebassets/scripts/sf-uploader-169302.min.js",
+        "syncfusion.blazor.inputs.19.4.0.56.nupkg.sha512",
+        "syncfusion.blazor.inputs.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
     "Syncfusion.Blazor.Popups/19.4.0.56": {
       "sha512": "L3uMpW1nRPHC7xYVJT/CaoZsXItHQ0mhDpEYVX2mwxYpuJIItB/cHVuYOW8gCcS/tDaC6UybH3nyKQcbm8Lx7Q==",
       "type": "package",
@@ -1529,6 +1676,7 @@
       "Newtonsoft.Json >= 13.0.1",
       "RestSharp >= 107.3.0",
       "Swashbuckle.AspNetCore >= 6.3.0",
+      "Syncfusion.Blazor.DropDowns >= 19.4.0.56",
       "Syncfusion.Blazor.SplitButtons >= 19.4.0.56",
       "System.IdentityModel.Tokens.Jwt >= 6.16.0"
     ]
@@ -1591,6 +1739,10 @@
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.3.0, )"
+          },
+          "Syncfusion.Blazor.DropDowns": {
+            "target": "Package",
+            "version": "[19.4.0.56, )"
           },
           "Syncfusion.Blazor.SplitButtons": {
             "target": "Package",

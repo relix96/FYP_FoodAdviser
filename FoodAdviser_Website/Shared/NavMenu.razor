@@ -24,9 +24,9 @@
     </nav>
 </div>
 
-@foreach(var filter in Filters)
+@*@foreach(var filter in Filters)
 {
-    <SfDropDownButton Content="@filter" ><!--check name for dropdown filter-->
+    <SfDropDownButton Content="@navFilter" ><!--check name for dropdown filter-->
         <DropDownMenuItems>
             @foreach(var x in filter)
             {
@@ -39,11 +39,37 @@
             
         </DropDownMenuItems>
     </SfDropDownButton>
+}*@
+<div>
+Diet
+<SfMultiSelect Mode="VisualMode.CheckBox" TValue="string[]" TItem="TypeFilter" Placeholder="Select a Diet" PopupHeight="450px" PopupWidth="250" DataSource="@Diet">
+    <MultiSelectFieldSettings Value="ID" Text="Name"></MultiSelectFieldSettings>
 
+</SfMultiSelect>
+</div>
+<div>
+    Dish
+<SfMultiSelect Mode="VisualMode.CheckBox" Placeholder="Select a type of Dish" TValue="string[]" TItem="TypeFilter" DataSource="@Dish">
+    <MultiSelectFieldSettings Value="ID" Text="Name"></MultiSelectFieldSettings>
 
+</SfMultiSelect>
+</div>
 
+<div>
+    Cuisine
+<SfMultiSelect Mode="VisualMode.CheckBox" Placeholder="Select a Cuisine" TValue="string[]" TItem="TypeFilter" DataSource="@Cuisine">
+    <MultiSelectFieldSettings Value="ID" Text="Name"></MultiSelectFieldSettings>
 
-}
+</SfMultiSelect>
+</div>
+
+<div>
+    Intolerance
+<SfMultiSelect Mode="VisualMode.CheckBox" TValue="string[]" Placeholder="Select a Intolerance" TItem="TypeFilter" DataSource="@Intolerance">
+    <MultiSelectFieldSettings Value="ID" Text="Name"></MultiSelectFieldSettings>
+
+</SfMultiSelect>
+</div>
 
 
 
@@ -52,18 +78,18 @@
     public string navFilter = "Diet";
 
     [Parameter]
-    public List<String> Diet{ get;set;} = new List<String>();
+    public List<TypeFilter> Diet{ get;set;} = new List<TypeFilter>();
 
     [Parameter]
-    public List<String> Intolerance{ get;set;} = new List<String>();
+    public List<TypeFilter> Intolerance{ get;set;} = new List<TypeFilter>();
 
     [Parameter]
-    public List<String> Cuisine{ get;set;} = new List<String>();
+    public List<TypeFilter> Cuisine{ get;set;} = new List<TypeFilter>();
 
     [Parameter]
-    public List<String> Type{ get;set;} = new List<String>();
+    public List<TypeFilter> Dish{ get;set;} = new List<TypeFilter>();
 
-    List<List<String>> Filters = new List<List<String>>();
+    List<List<TypeFilter>> Filters = new List<List<TypeFilter>>();
 
     private bool collapseNavMenu = true;
 
@@ -77,20 +103,38 @@
 
     protected override async Task OnParametersSetAsync() => await GetFilters();
 
-        private  async Task<List<List<String>>> GetFilters()
+    private async Task<List<List<TypeFilter>>> GetFilters()
     {
-        
-        Diet = Enum.GetNames(typeof(Filter.Diet)).ToList();
-        Intolerance = Enum.GetNames(typeof(Filter.Intolerance)).ToList();
-        Cuisine = Enum.GetNames(typeof(Filter.Cuisine)).ToList();
-        Type = Enum.GetNames(typeof(Filter.Type)).ToList();
 
+        Diet = getValues(typeof(Filter.Diet));
+        Intolerance = getValues(typeof(Filter.Intolerance));
+        Cuisine = getValues(typeof(Filter.Cuisine));
+        Dish = getValues(typeof(Filter.Dish));
         Filters.Add(Diet);
         Filters.Add(Intolerance);
         Filters.Add(Cuisine);
-        Filters.Add(Type);
+        Filters.Add(Dish);
         return Filters;
     }
+
+    private List<TypeFilter> getValues(Type num)
+    { 
+        List<TypeFilter> typeFilters = new List<TypeFilter>();
+
+        foreach(int d in Enum.GetValues(num))
+        {
+            TypeFilter tf = new TypeFilter();
+            tf.ID=d;
+            tf.Name = Enum.GetName((num),d);
+            typeFilters.Add(tf);
+        }
+        
+        return typeFilters;
+    }
+
+    
+    
+
 
 
 }

@@ -69,7 +69,7 @@ namespace FoodAdviserModels.Models
             Vietnamese
         }
 
-        public enum Type
+        public enum Dish
         {
             MainCourse,
             SideDish,
@@ -87,4 +87,10 @@ namespace FoodAdviserModels.Models
             Drink
         }
     }
+
+    public class TypeFilter
+    {
+        public int ID { get; set; }
+        public string Name { get; set; }
+    } 
 }

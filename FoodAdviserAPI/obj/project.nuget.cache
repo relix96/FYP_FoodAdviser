@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "FtNHNuu9YjsCdaSKOBQKH1flJ72DjhpAbbkpG4/CV2X9k4oSNiok273dJM2duLFVlKohaVNNZ65oEKeVEj7M0w==",
+  "dgSpecHash": "z9TZR0Mw8o0ciXRDdAnY9NhmyJ2nTpQy0jKINVxVQMIskYtvMC8UG2gtGFN6u1eVVae/CjZlwcCEbI0JvQSiEA==",
   "success": true,
   "projectFilePath": "C:\\Users\\zemar\\OneDrive\\Ambiente de Trabalho\\Repositorios\\FYP_FoodAdviser\\FoodAdviserAPI\\FoodAdviserAPI.csproj",
   "expectedPackageFiles": [
@@ -31,6 +31,9 @@
     "C:\\Users\\zemar\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.3.0\\swashbuckle.aspnetcore.swaggerui.6.3.0.nupkg.sha512",
     "C:\\Users\\zemar\\.nuget\\packages\\syncfusion.blazor.buttons\\19.4.0.56\\syncfusion.blazor.buttons.19.4.0.56.nupkg.sha512",
     "C:\\Users\\zemar\\.nuget\\packages\\syncfusion.blazor.core\\19.4.0.56\\syncfusion.blazor.core.19.4.0.56.nupkg.sha512",
+    "C:\\Users\\zemar\\.nuget\\packages\\syncfusion.blazor.data\\19.4.0.56\\syncfusion.blazor.data.19.4.0.56.nupkg.sha512",
+    "C:\\Users\\zemar\\.nuget\\packages\\syncfusion.blazor.dropdowns\\19.4.0.56\\syncfusion.blazor.dropdowns.19.4.0.56.nupkg.sha512",
+    "C:\\Users\\zemar\\.nuget\\packages\\syncfusion.blazor.inputs\\19.4.0.56\\syncfusion.blazor.inputs.19.4.0.56.nupkg.sha512",
     "C:\\Users\\zemar\\.nuget\\packages\\syncfusion.blazor.popups\\19.4.0.56\\syncfusion.blazor.popups.19.4.0.56.nupkg.sha512",
     "C:\\Users\\zemar\\.nuget\\packages\\syncfusion.blazor.spinner\\19.4.0.56\\syncfusion.blazor.spinner.19.4.0.56.nupkg.sha512",
     "C:\\Users\\zemar\\.nuget\\packages\\syncfusion.blazor.splitbuttons\\19.4.0.56\\syncfusion.blazor.splitbuttons.19.4.0.56.nupkg.sha512",

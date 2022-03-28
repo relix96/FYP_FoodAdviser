@@ -48,6 +48,10 @@
               "target": "Package",
               "version": "[107.3.0, )"
             },
+            "Syncfusion.Blazor.DropDowns": {
+              "target": "Package",
+              "version": "[19.4.0.56, )"
+            },
             "Syncfusion.Blazor.SplitButtons": {
               "target": "Package",
               "version": "[19.4.0.56, )"
@@ -119,6 +123,10 @@
             "RestSharp": {
               "target": "Package",
               "version": "[107.3.0, )"
+            },
+            "Syncfusion.Blazor.DropDowns": {
+              "target": "Package",
+              "version": "[19.4.0.56, )"
             },
             "Syncfusion.Blazor.SplitButtons": {
               "target": "Package",
