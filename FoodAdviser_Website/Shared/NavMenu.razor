@@ -16,33 +16,19 @@
                 <span class="oi oi-home" aria-hidden="true"></span> Home
             </NavLink>
         </div>
-        <div class="nav-item px-3">
+        @*<div class="nav-item px-3">
             <NavLink class="nav-link" href="counter">
                 <span class="oi oi-plus" aria-hidden="true"></span> Counter
             </NavLink>
-        </div>
+        </div>*@
     </nav>
 </div>
 
-@*@foreach(var filter in Filters)
-{
-    <SfDropDownButton Content="@navFilter" ><!--check name for dropdown filter-->
-        <DropDownMenuItems>
-            @foreach(var x in filter)
-            {
 
-                 <DropDownMenuItem Text="@x"></DropDownMenuItem>
-            }
-
-           
-            <DropDownMenuItem Text="Edit"></DropDownMenuItem>
-            
-        </DropDownMenuItems>
-    </SfDropDownButton>
-}*@
 <div>
 Diet
 <SfMultiSelect Mode="VisualMode.CheckBox" TValue="string[]" TItem="TypeFilter" Placeholder="Select a Diet" PopupHeight="450px" PopupWidth="250" DataSource="@Diet">
+    <MultiSelectEvents TItem="TypeFilter" TValue="string[]" OnValueSelect="@OnValueSelecthandler" OnValueRemove="@OnValueRemovehandler" ></MultiSelectEvents>
     <MultiSelectFieldSettings Value="ID" Text="Name"></MultiSelectFieldSettings>
 
 </SfMultiSelect>
@@ -71,25 +57,68 @@ Diet
 </SfMultiSelect>
 </div>
 
+<div>
+    
+    <div style="height:300px;overflow-y:scroll">
+        <p> Ingredients you have: </p>
+        <input type="text" placeholder="Enter an Ingredient" @bind="includeIngredient" />
+        <SfButton @ref="button" CssClass="e-success" IconCss="e-btn-sb-icons e-add-icon" @onclick="AddIncludeIngredient"></SfButton>
+        <ul>
+            @foreach(var i in includeIngredients)
+            {
+                <li>
+                   <SfButton @ref="button" CssClass="e-success" IconCss="e-btn-sb-icons e-add-icon" IsPrimary="true" Content="@i" @onclick="@((args) => RemoveIncludeIngredient(args,i))"></SfButton>
+                </li>
+            }
+        </ul>
+    </div>
+    
+    <div style="height:300px;overflow-y:scroll">
+        <p> Ingredients you don't want: </p>
+        <input type="text" placeholder="Enter an Ingredient" @bind="excludeIngredient" />
+        <SfButton @ref="button2" CssClass="e-success" IconCss="e-btn-sb-icons e-add-icon" @onclick="AddExcludeIngredient"></SfButton>
+        <ul>
+            @foreach(var i in excludeIngredients)
+            {
+                <li>
+                   <SfButton @ref="button" CssClass="e-danger" IconCss="e-icons e-circle-remove " IsPrimary="true" IconPosition="@IconPosition.Right" Content="@i" @onclick="@((args) => RemoveExcludeIngredient(args,i))"></SfButton>
+                </li>
+            }
+        </ul>
+    </div>
+</div>
+
 
 
 
 @code {
-    public string navFilter = "Diet";
+
+    private List<TypeFilter> Diet{ get;set;} = new List<TypeFilter>();
+
+
+    private List<TypeFilter> Intolerance{ get;set;} = new List<TypeFilter>();
+
+
+    private List<TypeFilter> Cuisine{ get;set;} = new List<TypeFilter>();
+
+
+    private List<TypeFilter> Dish{ get;set;} = new List<TypeFilter>();
 
     [Parameter]
-    public List<TypeFilter> Diet{ get;set;} = new List<TypeFilter>();
+    public List<List<TypeFilter>> Filters{ get;set;} = new List<List<TypeFilter>>();
+
+    private String includeIngredient;
+    private String excludeIngredient;
+    private SfButton button;
+    private SfButton button2 ;
 
     [Parameter]
-    public List<TypeFilter> Intolerance{ get;set;} = new List<TypeFilter>();
+    public List<String> includeIngredients { get; set; } = new List<String>();
 
     [Parameter]
-    public List<TypeFilter> Cuisine{ get;set;} = new List<TypeFilter>();
+    public List<String> excludeIngredients { get; set; } = new List<String>();
 
-    [Parameter]
-    public List<TypeFilter> Dish{ get;set;} = new List<TypeFilter>();
 
-    List<List<TypeFilter>> Filters = new List<List<TypeFilter>>();
 
     private bool collapseNavMenu = true;
 
@@ -126,10 +155,47 @@ Diet
             TypeFilter tf = new TypeFilter();
             tf.ID=d;
             tf.Name = Enum.GetName((num),d);
+            tf.isChecked = false;
             typeFilters.Add(tf);
         }
-        
+
         return typeFilters;
+    }
+
+    private void AddIncludeIngredient(Microsoft.AspNetCore.Components.Web.MouseEventArgs args)
+    {
+        if(!includeIngredients.Contains(includeIngredient) && includeIngredient != null)
+            includeIngredients.Add(includeIngredient);
+    }
+
+    private void RemoveIncludeIngredient(Microsoft.AspNetCore.Components.Web.MouseEventArgs args, String s)
+    {
+        includeIngredients.Remove(s);
+    }
+
+    private void AddExcludeIngredient(Microsoft.AspNetCore.Components.Web.MouseEventArgs args)
+    {
+        if(!excludeIngredients.Contains(excludeIngredient) && excludeIngredient != null)
+            excludeIngredients.Add(excludeIngredient);
+    }
+
+    private void RemoveExcludeIngredient(Microsoft.AspNetCore.Components.Web.MouseEventArgs args, String s)
+    {
+        excludeIngredients.Remove(s);
+    }
+
+
+
+    private void OnValueSelecthandler(SelectEventArgs<TypeFilter> args)
+    {
+        // Here you can customize your code
+        args.ItemData.isChecked = true;
+    }
+
+    private void OnValueRemovehandler(RemoveEventArgs<TypeFilter> args)
+    {
+        // Here you can customize your code
+        args.ItemData.isChecked = false;
     }
 
     

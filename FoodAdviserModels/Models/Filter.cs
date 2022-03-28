@@ -88,9 +88,12 @@ namespace FoodAdviserModels.Models
         }
     }
 
+    [Serializable]
     public class TypeFilter
     {
         public int ID { get; set; }
         public string Name { get; set; }
+
+        public bool isChecked { get; set; }
     } 
 }

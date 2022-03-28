@@ -1218,6 +1218,7 @@
     "net6.0": [
       "Blazored.Typeahead >= 4.6.0",
       "RestSharp >= 107.3.0",
+      "Syncfusion.Blazor.Buttons >= 19.4.0.56",
       "Syncfusion.Blazor.DropDowns >= 19.4.0.56",
       "Syncfusion.Blazor.SplitButtons >= 19.4.0.56"
     ]
@@ -1268,6 +1269,10 @@
           "RestSharp": {
             "target": "Package",
             "version": "[107.3.0, )"
+          },
+          "Syncfusion.Blazor.Buttons": {
+            "target": "Package",
+            "version": "[19.4.0.56, )"
           },
           "Syncfusion.Blazor.DropDowns": {
             "target": "Package",

@@ -10,6 +10,7 @@
         "dependencies": {
           "Blazored.Typeahead": "4.6.0",
           "RestSharp": "107.3.0",
+          "Syncfusion.Blazor.Buttons": "19.4.0.56",
           "Syncfusion.Blazor.DropDowns": "19.4.0.56",
           "Syncfusion.Blazor.SplitButtons": "19.4.0.56"
         },
