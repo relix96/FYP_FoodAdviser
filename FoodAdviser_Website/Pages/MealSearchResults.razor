@@ -1,5 +1,7 @@
 ﻿@page "/search/{mealResult}"
+@page "/search/"
 
+@using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage
 @using Microsoft.AspNetCore.Components.Web
 @using Food_Adviser.Services
 @using FoodAdviserModels.Models
@@ -44,9 +46,33 @@ else
     public Meal meals { get; set; } = new Meal();
 
     [Parameter]
+    public Meal meal { get; set; } = new Meal();
+
+    [Parameter]
     public String mealResult{ get; set; } ="";
 
+    [Inject]
+    ProtectedSessionStorage sessionStorage{ get; set; }
+
     protected override async Task OnParametersSetAsync() => await GetSearchMealsByName(mealResult);
-    private async Task<Meal> GetSearchMealsByName(String mealResult) => meals = await MealService.GetMealsByName(mealResult);
+    private async Task<Meal> GetSearchMealsByName(String mealResult)
+    {
+        if (mealResult != null)
+            return meals = await MealService.GetMealsByName(mealResult);
+        else
+        {
+            await GetStorageSession();
+            return meals;
+        }
+    }
+
+    private async Task GetStorageSession()
+    {
+        ProtectedBrowserStorageResult<Meal> result = await sessionStorage.GetAsync<Meal>("meals");
+        if (result.Success)
+        {
+            meals = result.Value;
+        }
+    }
 
 }

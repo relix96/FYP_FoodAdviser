@@ -1,4 +1,7 @@
-﻿public class Us
+﻿
+using FoodAdviserModels.Models;
+
+public class Us
 {
     public double amount { get; set; }
     public string unitShort { get; set; }
@@ -128,8 +131,25 @@ public class MealResult{
     public int id { get; set; }   
 
     public string title { get; set; }
-
+    public string? image { get; set; }
     public string imageType { get; set; }
+}
+
+[Serializable]
+public class MealResultFiltered
+{
+    public List<MealResult> results { get; set; }
+    public int offset { get; set; }
+    public int number { get; set; }
+    public int totalResults { get; set; }
+}
+
+[Serializable]
+public class MealSearchFiltered
+{
+    public List<List<TypeFilter>>? typeFilters { get; set; }
+    public List<String>? includeIngredients { get; set; }
+    public List<String>? excludeIngredients { get; set; }
 }
 
 

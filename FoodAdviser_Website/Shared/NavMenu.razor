@@ -1,4 +1,10 @@
 ﻿@using FoodAdviserModels.Models
+@using Food_Adviser.Services
+@using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage
+@using Newtonsoft.Json
+
+@inject NavigationManager navigationManager
+@inject IMealService MealService
 
 <div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
@@ -25,10 +31,12 @@
 </div>
 
 
+<SfButton @ref="button" CssClass="e-success" IconCss="e-btn-sb-icons e-add-icon" IsPrimary="true" Content="Search" @onclick="@(SearchMeals)"></SfButton>
+
 <div>
 Diet
 <SfMultiSelect Mode="VisualMode.CheckBox" TValue="string[]" TItem="TypeFilter" Placeholder="Select a Diet" PopupHeight="450px" PopupWidth="250" DataSource="@Diet">
-    <MultiSelectEvents TItem="TypeFilter" TValue="string[]" OnValueSelect="@OnValueSelecthandler" OnValueRemove="@OnValueRemovehandler" ></MultiSelectEvents>
+    <MultiSelectEvents TItem="TypeFilter" TValue="string[]" OnValueSelect="@OnValueSelecthandler" OnValueRemove="@OnValueRemovehandler"></MultiSelectEvents>
     <MultiSelectFieldSettings Value="ID" Text="Name"></MultiSelectFieldSettings>
 
 </SfMultiSelect>
@@ -36,6 +44,7 @@ Diet
 <div>
     Dish
 <SfMultiSelect Mode="VisualMode.CheckBox" Placeholder="Select a type of Dish" TValue="string[]" TItem="TypeFilter" DataSource="@Dish">
+    <MultiSelectEvents TItem="TypeFilter" TValue="string[]" OnValueSelect="@OnValueSelecthandler" OnValueRemove="@OnValueRemovehandler"></MultiSelectEvents>
     <MultiSelectFieldSettings Value="ID" Text="Name"></MultiSelectFieldSettings>
 
 </SfMultiSelect>
@@ -44,6 +53,7 @@ Diet
 <div>
     Cuisine
 <SfMultiSelect Mode="VisualMode.CheckBox" Placeholder="Select a Cuisine" TValue="string[]" TItem="TypeFilter" DataSource="@Cuisine">
+    <MultiSelectEvents TItem="TypeFilter" TValue="string[]" OnValueSelect="@OnValueSelecthandler" OnValueRemove="@OnValueRemovehandler"></MultiSelectEvents>
     <MultiSelectFieldSettings Value="ID" Text="Name"></MultiSelectFieldSettings>
 
 </SfMultiSelect>
@@ -52,6 +62,7 @@ Diet
 <div>
     Intolerance
 <SfMultiSelect Mode="VisualMode.CheckBox" TValue="string[]" Placeholder="Select a Intolerance" TItem="TypeFilter" DataSource="@Intolerance">
+    <MultiSelectEvents TItem="TypeFilter" TValue="string[]" OnValueSelect="@OnValueSelecthandler" OnValueRemove="@OnValueRemovehandler"></MultiSelectEvents>
     <MultiSelectFieldSettings Value="ID" Text="Name"></MultiSelectFieldSettings>
 
 </SfMultiSelect>
@@ -92,20 +103,20 @@ Diet
 
 
 @code {
-
-    private List<TypeFilter> Diet{ get;set;} = new List<TypeFilter>();
-
-
-    private List<TypeFilter> Intolerance{ get;set;} = new List<TypeFilter>();
-
-
-    private List<TypeFilter> Cuisine{ get;set;} = new List<TypeFilter>();
-
-
-    private List<TypeFilter> Dish{ get;set;} = new List<TypeFilter>();
+    [Parameter]
+    public List<TypeFilter> Diet{ get;set;} 
 
     [Parameter]
-    public List<List<TypeFilter>> Filters{ get;set;} = new List<List<TypeFilter>>();
+    public List<TypeFilter> Intolerance{ get;set;} 
+
+    [Parameter]
+    public List<TypeFilter> Cuisine{ get;set;} 
+
+    [Parameter]
+    public List<TypeFilter> Dish{ get;set;} 
+
+    [Parameter]
+    public List<List<TypeFilter>> Filters{ get;set;}
 
     private String includeIngredient;
     private String excludeIngredient;
@@ -113,12 +124,16 @@ Diet
     private SfButton button2 ;
 
     [Parameter]
-    public List<String> includeIngredients { get; set; } = new List<String>();
+    public List<String> includeIngredients { get; set; } = new List<string>();
 
     [Parameter]
-    public List<String> excludeIngredients { get; set; } = new List<String>();
+    public List<String> excludeIngredients { get; set; } = new List<string>();
 
+    [Parameter]
+    public MealSearchFiltered mealSearchFiltered { get; set; }  = new MealSearchFiltered();
 
+    [Inject]
+    ProtectedSessionStorage sessionStorage{ get; set; }
 
     private bool collapseNavMenu = true;
 
@@ -134,17 +149,37 @@ Diet
 
     private async Task<List<List<TypeFilter>>> GetFilters()
     {
-
+        List<List<TypeFilter>> filters = new List<List<TypeFilter>>();
         Diet = getValues(typeof(Filter.Diet));
         Intolerance = getValues(typeof(Filter.Intolerance));
         Cuisine = getValues(typeof(Filter.Cuisine));
         Dish = getValues(typeof(Filter.Dish));
-        Filters.Add(Diet);
-        Filters.Add(Intolerance);
-        Filters.Add(Cuisine);
-        Filters.Add(Dish);
-        return Filters;
+        filters.Add(Diet);
+        filters.Add(Intolerance);
+        filters.Add(Cuisine);
+        filters.Add(Dish);
+        return Filters=filters;
     }
+
+    private async Task SearchMeals()
+    {
+
+        Meal meal = new Meal();
+        
+
+        mealSearchFiltered.typeFilters = Filters;
+        mealSearchFiltered.includeIngredients = includeIngredients;
+        mealSearchFiltered.excludeIngredients = excludeIngredients;
+        string search = System.Text.Json.JsonSerializer.Serialize(mealSearchFiltered);
+
+       
+        
+        meal = await MealService.GetMealsByFilter(search);
+        await sessionStorage.SetAsync("meals",meal);
+        navigationManager.NavigateTo($"/search/");
+    }
+
+
 
     private List<TypeFilter> getValues(Type num)
     { 
@@ -197,10 +232,4 @@ Diet
         // Here you can customize your code
         args.ItemData.isChecked = false;
     }
-
-    
-    
-
-
-
 }

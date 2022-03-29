@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <PackageReference Include="Blazored.Typeahead" Version="4.6.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="RestSharp" Version="107.3.0" />
     <PackageReference Include="Syncfusion.Blazor.Buttons" Version="19.4.0.56" />
     <PackageReference Include="Syncfusion.Blazor.DropDowns" Version="19.4.0.56" />
