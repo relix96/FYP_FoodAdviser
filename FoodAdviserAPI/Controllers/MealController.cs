@@ -36,6 +36,39 @@ namespace FoodAdviserAPI.Controllers
 
 
         }
+
+
+        [HttpGet]
+        [Route("SearchMealsById/{id}")]
+        public async Task<IActionResult> GetMealsByIDS(String id)
+        {
+            try
+            {
+                Meal meals = new Meal();
+
+                List<int> ids = JsonConvert.DeserializeObject<List<int>>(id);
+
+                meals = await GetMealsByIds(ids);
+                if (meals != null)
+                {
+                    
+                    return Ok(meals);
+                }
+                else return BadRequest();
+
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+
+
+
+        }
+
+
+
+
         [HttpGet]
         [Route("SearchMealsName/{MealName}")]
         public async Task<List<MealResult>> SearchMealsName([FromRoute] String MealName)
@@ -188,6 +221,7 @@ namespace FoodAdviserAPI.Controllers
             }
         }
 
+
         private static String FormatStringSearch(List<TypeFilter> filter)
         {
             String search = "";
@@ -244,6 +278,50 @@ namespace FoodAdviserAPI.Controllers
             }
 
         }
+
+        private async Task<Meal> GetMealsByIds(List<int> ids)
+        {
+            Meal meals = new Meal();
+            try
+            {
+                foreach (var id in ids)
+                {
+                    var client = new HttpClient();
+                    var request = new HttpRequestMessage
+                    {
+                        Method = HttpMethod.Get,
+                        RequestUri = new Uri("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/" + id + "/information"),
+                        Headers =
+                        {
+                            { "x-rapidapi-host", "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com" },
+                            { "x-rapidapi-key", "da795d761emshe955b1ccb3626e8p1766a7jsn9f3618b4b169" },
+                        },
+
+                    };
+                    using (var response = await client.SendAsync(request))
+                    {
+                        if (response.IsSuccessStatusCode)
+                        {
+                            string body = response.Content.ReadAsStringAsync().Result;
+                            var test = JsonConvert.DeserializeObject(body);
+                            Recipe mealResult = JsonConvert.DeserializeObject<Recipe>(body);
+                            meals.recipes.Add(mealResult);
+                        }
+
+                    }
+
+                }
+                return meals;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return meals = null;
+            }
+
+        }
+
+
 
         private async Task<String> getGetSearchMealsByNameAsync(String mealName)
         {

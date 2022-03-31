@@ -8,5 +8,6 @@ namespace Food_Adviser.Services
         Task<List<MealResult>> SearchMealsName(String meals);
         Task<Meal> GetMealsByName(String meals);
         Task<Meal> GetMealsByFilter(String search);
+        Task<Meal> GetMealsById(string id);
     }
 }
