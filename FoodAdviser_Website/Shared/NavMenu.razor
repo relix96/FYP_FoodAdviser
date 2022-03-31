@@ -2,6 +2,7 @@
 @using Food_Adviser.Services
 @using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage
 @using Newtonsoft.Json
+@using System.Linq
 
 @inject NavigationManager navigationManager
 @inject IMealService MealService
@@ -166,17 +167,17 @@ Diet
 
         Meal meal = new Meal();
         
-
         mealSearchFiltered.typeFilters = Filters;
         mealSearchFiltered.includeIngredients = includeIngredients;
         mealSearchFiltered.excludeIngredients = excludeIngredients;
         string search = System.Text.Json.JsonSerializer.Serialize(mealSearchFiltered);
 
-       
-        
+
+        sessionStorage.DeleteAsync("meals");
         meal = await MealService.GetMealsByFilter(search);
-        await sessionStorage.SetAsync("meals",meal);
-        navigationManager.NavigateTo($"/search/");
+        var ids = meal.recipes.Select(x=>x.id).ToList();
+        await sessionStorage.SetAsync("meals",ids);
+        navigationManager.NavigateTo($"/search/filters");
     }
 
 

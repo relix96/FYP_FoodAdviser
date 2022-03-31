@@ -1,5 +1,5 @@
 ﻿@page "/search/{mealResult}"
-@page "/search/"
+@page "/search/filters"
 
 @using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage
 @using Microsoft.AspNetCore.Components.Web
@@ -49,12 +49,15 @@ else
     public Meal meal { get; set; } = new Meal();
 
     [Parameter]
+    public List<int> ids{ get; set; }
+
+    [Parameter]
     public String mealResult{ get; set; } ="";
 
     [Inject]
     ProtectedSessionStorage sessionStorage{ get; set; }
 
-    protected override async Task OnParametersSetAsync() => await GetSearchMealsByName(mealResult);
+    protected override async Task OnInitializedAsync() => await GetSearchMealsByName(mealResult);
     private async Task<Meal> GetSearchMealsByName(String mealResult)
     {
         if (mealResult != null)
@@ -68,10 +71,11 @@ else
 
     private async Task GetStorageSession()
     {
-        ProtectedBrowserStorageResult<Meal> result = await sessionStorage.GetAsync<Meal>("meals");
+        ProtectedBrowserStorageResult<List<int>> result = await sessionStorage.GetAsync<List<int>>("meals");
         if (result.Success)
         {
-            meals = result.Value;
+            ids = result.Value;
+            sessionStorage.DeleteAsync("meals");
         }
     }
 
