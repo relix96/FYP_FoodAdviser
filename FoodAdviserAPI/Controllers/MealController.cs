@@ -66,6 +66,35 @@ namespace FoodAdviserAPI.Controllers
 
         }
 
+        [HttpGet]
+        [Route("SearchMealById/{id}")]
+        public async Task<IActionResult> GetMealByID(String id)
+        {
+            try
+            {
+                Meal meals = new Meal();
+                List<int> ids = new List<int>();
+
+                ids.Add(Int32.Parse(id));
+
+                meals = await GetMealsByIds(ids);
+                if (meals != null)
+                {
+
+                    return Ok(meals);
+                }
+                else return BadRequest();
+
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+
+
+
+        }
+
 
 
 

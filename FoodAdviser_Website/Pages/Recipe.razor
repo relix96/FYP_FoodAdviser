@@ -1,4 +1,8 @@
-﻿@page "/search/recipe"
+﻿@page "/search/recipe/{id}"
+@using FoodAdviserModels.Models
+@using Food_Adviser.Services
+
+@inject IMealService MealService
 
 <h3>Recipe</h3>
 
@@ -130,5 +134,16 @@
 
 
 @code {
+
+    [Parameter]
+    public String id{ set; get; }
+
+    [Parameter]
+    public Meal meal{ set; get; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        meal = await MealService.GetMealById(id);
+    }
 
 }

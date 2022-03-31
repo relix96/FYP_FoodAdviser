@@ -42,5 +42,10 @@ namespace Food_Adviser.Services
         {
             return await httpClient.GetFromJsonAsync<Meal>($"api/Meal/SearchMealsById/{id}");
         }
+
+        public async Task<Meal> GetMealById(String id)
+        {
+            return await httpClient.GetFromJsonAsync<Meal>($"api/Meal/SearchMealById/{id}");
+        }
     }
 }
