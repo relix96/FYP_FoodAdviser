@@ -19,3 +19,12 @@ Instrucions to download and install:
 
 
 This application aims to reduce leftovers at home. To mitigate this problem, it was develop a search bar, a system system and two textboxs where the user can write the ingredients that he have and the other textbox is for the ingredients that he does not want. The design is simple and can be improved in future work.
+
+
+On the left side of the page is where the filter system is. On the right top corner is where the search bar is.
+
+![image](https://user-images.githubusercontent.com/25825310/169575862-51fa3374-7cc4-4719-b803-e11526723d5f.png)
+
+
+All the data provided is from this API: https://rapidapi.com/spoonacular/api/recipe-food-nutrition/. 
+
